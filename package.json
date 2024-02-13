@@ -1,5 +1,6 @@
 {
 	"name": "flappybird",
+	"main": "src/main.js", // Specify the main entry point
 	"scripts": {
 		"build": "esbuild --bundle src/main.js --outfile=www/main.js --minify",
 		"dev": "esbuild --bundle src/main.js --outfile=www/main.js --servedir=www",
