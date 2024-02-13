@@ -1,13 +1,13 @@
 {
 	"name": "flappybird",
-	"main": "src/main.js", // Specify the main entry point
+	"main": "src/main.js",
 	"scripts": {
 		"build": "esbuild --bundle src/main.js --outfile=www/main.js --minify",
 		"dev": "esbuild --bundle src/main.js --outfile=www/main.js --servedir=www",
 		"bundle": "npm run build && mkdir -p dist && zip -r dist/game.zip www -x \"**/.DS_Store\""
 	},
 	"dependencies": {
-		"kaboom": "^3000.1.17"
+		"kaboom": "^0.9.0"
 	},
 	"devDependencies": {
 		"esbuild": "^0.19.9"
